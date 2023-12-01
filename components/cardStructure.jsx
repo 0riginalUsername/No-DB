@@ -32,7 +32,7 @@ const CardStructure = (props) => {
     } else{
         if(isEditing === false) {
             return (
-                <div className="card" onClick={toggleCard}>
+                <section className="card" onClick={toggleCard}>
                     <p>Power: {power}hp</p>
                     <p>Weight: {weight}lbs</p>
                     <p>{ratio.toFixed(3)}hp/lbs</p>
@@ -42,7 +42,7 @@ const CardStructure = (props) => {
                             changeEditMode()
                         }}
                     >Edit</button>
-                </div>
+                </section>
             )
         } else {
             return(

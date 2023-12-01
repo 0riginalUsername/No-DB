@@ -33,12 +33,16 @@
   }
 } */
 
-div.card {
+#cardDisplay{
+  display: flex;
+}
+
+.card {
   padding: 5px;
   border-style: solid;
   width: 250px;
   height: 300px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 /* .read-the-docs {

@@ -59,7 +59,7 @@ const MainPage =(props) =>{
 
     const car = currentData.map((car) => <CardStructure changeEditMode={changeEditMode} editCard={editCard} isEditing = {editMode} deleteCard={() => deleteCard(car.id)} initialData={car} key={car.id}/>)
     return(
-        <div>
+        <div id="cardDisplay">
             {car}
             <AddCard  newCard={newCard}/>
         </div>
