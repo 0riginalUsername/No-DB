@@ -18,4 +18,4 @@ app.delete('/cars/:id', deleteCar)
 app.put('/cars/:id', editCar)
 
 
-ViteExpress.listen(app, 1337, () => console.log('oi lad server is runnin on htttp://localhost:1337'))
+ViteExpress.listen(app, 1337, () => console.log('oi lad server is runnin on http://localhost:1337'))

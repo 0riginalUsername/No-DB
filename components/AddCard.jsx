@@ -5,7 +5,7 @@ function AddCard(props) {
 
     return (
         <>
-        <button onClick ={newCard}>Add Card</button>
+        <button className="addCard" onClick ={newCard}>Add Card</button>
         </>
     )
 

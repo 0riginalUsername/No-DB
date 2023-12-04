@@ -44,17 +44,21 @@ const MainPage =(props) =>{
     }
     
     const editCard = (id, make, model, power, weight, img) =>{
-        // const bodyObj ={
-        //    make,
-        // }
+        const bodyObj ={
+           make,
+           model,
+           power,
+           weight,
+           img,
+        }
 
-        // axios.put(`/cars/${id}`, bodyObj)
-        //     .then((res) =>{
+        axios.put(`/cars/${id}`, bodyObj)
+            .then((res) =>{
                 
-        //         setCurrentData(res.data)
+                setCurrentData(res.data)
 
                 setisEditing(false)
-            // })
+            })
     }
 
     const car = currentData.map((car) => <CardStructure changeEditMode={changeEditMode} editCard={editCard} isEditing = {editMode} deleteCard={() => deleteCard(car.id)} initialData={car} key={car.id}/>)
